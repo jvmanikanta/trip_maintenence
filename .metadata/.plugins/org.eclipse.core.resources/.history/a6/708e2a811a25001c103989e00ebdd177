@@ -1,0 +1,13 @@
+package com.tripapp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TripappProjectRestapiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripappProjectRestapiApplication.class, args);
+	}
+
+}

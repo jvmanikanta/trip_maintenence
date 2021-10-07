@@ -1,0 +1,20 @@
+1633410290948	Rename package 'com.tripapp'
+1633410335827	Rename package 'com.tripapp.model'
+1633410347034	Rename package 'com.tripapp.service'
+1633411721774	Rename type 'IProjectService'
+1633411732768	Rename type 'ProjectServiceImpl'
+1633411738018	Rename type 'MainteneceServiceImp'
+1633414100984	Delete element
+1633414279031	Rename type 'Project'
+1633414325099	Copy compilation unit
+1633414452012	Copy compilation unit
+1633414707691	Delete elements
+1633426768479	Copy compilation unit
+1633427551762	Copy compilation unit
+1633427620279	Rename compilation unit 'Worker.java'
+1633429728675	Rename type 'IMainteneceService'
+1633434888584	Delete element
+1633435559027	Rename package 'com.mainteneceapp.repo'
+1633435699090	Rename package 'com.maintenenceapp.model'
+1633435712179	Rename package 'com.maintenenceapp.repo'
+1633435726327	Rename package 'com.maintenenceapp.service'

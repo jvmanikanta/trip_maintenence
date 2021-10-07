@@ -1,0 +1,7 @@
+package com.maintenenceapp.model;
+
+public enum Available {
+	   STANDARD,
+	   CUSTOM,
+	   LEAVECALANDER
+}

@@ -1,0 +1,5 @@
+package com.mainteneceapp.repo;
+
+public interface IMaintenenceRepo {
+
+}

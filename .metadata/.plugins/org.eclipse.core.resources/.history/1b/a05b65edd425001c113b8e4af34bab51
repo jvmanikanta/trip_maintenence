@@ -1,0 +1,34 @@
+package com.mainteneceapp;
+
+import java.time.LocalDate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import com.maintenenceapp.model.Maintenence;
+import com.maintenenceapp.model.Priority;
+import com.maintenenceapp.model.Status;
+import com.maintenenceapp.model.Trip;
+import com.maintenenceapp.service.IMaintenenceService;
+
+@SpringBootApplication
+public class TripappProjectRestapiApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripappProjectRestapiApplication.class, args);
+	}
+
+	@Autowired
+	IMaintenenceService maintenenceServiceImpl;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		LocalDate startDate = LocalDate.of(20201, 10, 4);
+		LocalDate endDate = LocalDate.of(2021, 11, 20);
+		Maintenence maintenence = new Maintenence("BikeService","mani",startDate,endDate,Priority.HIGH,Status.INPROGRESS);
+		maintenenceServiceImpl.addMaintenence(maintenence);
+	}
+
+}

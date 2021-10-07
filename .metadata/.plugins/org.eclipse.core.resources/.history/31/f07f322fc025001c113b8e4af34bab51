@@ -1,0 +1,8 @@
+package com.maintenenceapp.model;
+
+public enum Status {
+		
+		HIGH,
+	    MEDIUM,
+	    LOW
+}

@@ -1,0 +1,49 @@
+package com.maintenenceapp.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.mainteneceapp.repo.IMaintenenceRepo;
+import com.maintenenceapp.model.Maintenence;
+
+public class MainteneceServiceImpl implements IMainteneceService {
+
+	@Autowired
+	IMaintenenceRepo maintenenceRepo;
+	
+	@Override
+	public List<Maintenence> getAllProjects() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Maintenence getById(int projectId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Maintenence> getProjectsByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Maintenence addMaintenence(Maintenence maintenence) {
+		return mainteneceRepo.save(maintenence);
+	}
+
+	@Override
+	public Maintenence updateMaintenence(Maintenence maintenence) {
+		return mainten
+	}
+
+	@Override
+	public void deleteMaintenence(Maintenence maintenence) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

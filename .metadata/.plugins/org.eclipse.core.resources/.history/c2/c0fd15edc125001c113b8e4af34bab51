@@ -1,0 +1,9 @@
+package com.mainteneceapp.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.maintenenceapp.model.Maintenence;
+
+public interface IMaintenenceRepo extends JpaRepository<Maintenence, Integer> {
+
+}

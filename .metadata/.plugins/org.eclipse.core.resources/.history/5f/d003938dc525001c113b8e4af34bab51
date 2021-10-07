@@ -1,0 +1,15 @@
+package com.maintenenceapp.service;
+
+import java.util.List;
+
+import com.maintenenceapp.model.Maintenence;
+
+public interface IMainteneceService {
+	
+	public Maintenence addMaintenence(Maintenence maintenece);
+	public Maintenence updateMaintenence(Maintenence maintenence);
+	public void deleteMaintenence(Maintenence maintenence);
+	public List<Maintenence> getAllProjects();
+	public Maintenence getById(int projectId);
+	public List<Maintenence> getProjectsByName(String name);
+}

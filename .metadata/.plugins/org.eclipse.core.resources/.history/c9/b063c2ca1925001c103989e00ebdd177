@@ -1,0 +1,5 @@
+package com.tripapp.service;
+
+public interface IProjectService {
+
+}

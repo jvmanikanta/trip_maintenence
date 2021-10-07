@@ -1,0 +1,5 @@
+package com.maintenenceapp.model;
+
+public enum Priority {
+
+}

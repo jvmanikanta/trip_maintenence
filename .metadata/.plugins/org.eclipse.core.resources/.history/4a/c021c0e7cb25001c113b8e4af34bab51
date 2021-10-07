@@ -1,0 +1,42 @@
+package com.mainteneceapp;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+import com.maintenenceapp.model.Maintenence;
+import com.maintenenceapp.model.Priority;
+import com.maintenenceapp.model.Status;
+import com.maintenenceapp.model.Trip;
+import com.maintenenceapp.service.IMaintenenceService;
+
+@SpringBootApplication
+@EnableEurekaClient
+public class TripappProjectRestapiApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripappProjectRestapiApplication.class, args);
+	}
+
+	@Autowired
+	IMaintenenceService maintenenceService;
+	@Override
+	public void run(String... args) throws Exception {
+		LocalDate startDate = LocalDate.of(20201, 10, 4);
+		LocalDate endDate = LocalDate.of(2021, 11, 20);
+		Maintenence maintenence1 = new Maintenence();
+		Maintenence maintenence2 = new Maintenence();
+		Set<Maintenence> maintenenceList = new HashSet<>(Arrays.asList(maintenence1,maintenence2));
+		Trip trip = new Trip("ladakh","mani",startDate,endDate,Priority.valueOf("HIGH"),Status.valueOf("INPROGRESS"),);
+		
+	}
+
+}

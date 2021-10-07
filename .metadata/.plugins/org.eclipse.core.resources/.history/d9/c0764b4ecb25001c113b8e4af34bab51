@@ -1,0 +1,27 @@
+package com.mainteneceapp;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
+
+import com.maintenenceapp.service.IMaintenenceService;
+
+@SpringBootApplication
+@EnableEurekaClient
+public class TripappProjectRestapiApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TripappProjectRestapiApplication.class, args);
+	}
+
+	@Autowired
+	IMaintenenceService maintenenceService;
+	@Override
+	public void run(String... args) throws Exception {
+		
+	}
+
+}
